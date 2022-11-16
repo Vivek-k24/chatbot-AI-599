@@ -4,19 +4,19 @@
         {
             "tag": "google",
             "patterns": [
-                "google",
-                "search",
-                "internet"
+                "open google website",
+                "open a search engine",
+                "take me to the internet"
             ],
             "responses": [
-                "Redirecting to Google..."
+                "click the link for Google: https://www.google.com \n click the link for bing: https://www.bing.com"
             ]
         },
         {
             "tag": "greeting",
             "patterns": [
                 "Hi there",
-                "How are you",
+                "How are you?",
                 "Is anyone there?",
                 "Hey",
                 "Hola",
@@ -73,15 +73,9 @@
         },
         {
             "tag": "noanswer",
-            "patterns": [],
-            "responses": [
-                "Sorry, can't understand you",
-                "Please give me more info",
-                "Not sure I understand"
-            ],
-            "context": [
-                ""
-            ]
+            "patterns": [""],
+            "responses": ["Sorry, I didn't understand you", "Please give me more info", "Not sure I understand that"],
+            "context": [""]
         },
         {
             "tag": "options",
@@ -93,42 +87,35 @@
                 "What support is offered"
             ],
             "responses": [
-                "I am a general purpose chatbot. My capabilities are : \n 1. I can chat with you. Try asking me for jokes or riddles! \n 2. Ask me the date and time \n 3. I can google search for you. Use format google: your query \n 4. I can get the present weather for any city. Use format weather: city name \n 5. I can get you the top 10 trending news in India. Use keywords 'Latest News' \n 6. I can get you the top 10 trending songs globally. Type 'songs' \n 7. I can set a timer for you. Enter 'set a timer: minutes to timer' \n 8. I can get the present Covid stats for any country. Use 'covid 19: world' or 'covid 19: country name' \n Thank you!! "
+                "I am a Business support chatbot. My capabilities are : \n \n 1. I can chat with you. \n \n 2. I can help you with product or service related issues. \n \n 3. I can google search for you. Use format google: your query \n \n 4. I can get the present weather for any city. Use format weather: city name \n \n 5. I can set a timer for you. Enter 'set a timer: minutes to timer' \n\n Thank you!! "
             ],
             "context": [
                 ""
             ]
         },
-
         {
-            "tag": "jokes",
-            "patterns": [
-                "Tell me a joke",
-                "Joke",
-                "Make me laugh"
-            ],
-            "responses": [
-                "A perfectionist walked into a bar...apparently, the bar wasn't set high enough",
-                "I ate a clock yesterday, it was very time-consuming",
-                "Never criticize someone until you've walked a mile in their shoes. That way, when you criticize them, they won't be able to hear you from that far away. Plus, you'll have their shoes.",
-                "The world tongue-twister champion just got arrested. I hear they're gonna give him a really tough sentence.",
-                "I own the world's worst thesaurus. Not only is it awful, it's awful.",
-                "What did the traffic light say to the car? \"Don't look now, I'm changing.\"",
-                "What do you call a snowman with a suntan? A puddle.",
-                "How does a penguin build a house? Igloos it together",
-                "I went to see the doctor about my short-term memory problems – the first thing he did was make me pay in advance",
-                "As I get older and I remember all the people I’ve lost along the way, I think to myself, maybe a career as a tour guide wasn’t for me.",
-                "o what if I don't know what 'Armageddon' means? It's not the end of the world."
-            ],
-            "context": [
-                "jokes"
-            ]
+            "tag": "date",
+            "patterns": ["coffee?", "can i take you out on a date"],
+            "responses": ["Aaw, that's so sweet of you. Too bad am a Bot."],
+            "context": [""]
+        },
+        {
+            "tag": "fav",
+            "patterns": ["I need a favour", "can you help me"],
+            "responses": ["Well, go ahead and name it i see whether i can be able to help"],
+            "context": [""]
+        },
+        {
+            "tag": "need",
+            "patterns": ["I need you", "All I need is you","I want you"],
+            "responses": ["Yes I'm here to assist you"],
+            "context": [""]
         },
         {
             "tag": "Identity",
             "patterns": [
-                "Who are you",
-                "what are you"
+                "Who are you?",
+                "what are you?"
             ],
             "responses": [
                 "I am Vik, a Deep-Learning chatbot"
@@ -152,8 +139,8 @@
             "patterns": [
                 "Whats up",
                 "Wazzup",
-                "How are you",
-                "sup","How you doing"
+                "How are you?",
+                "sup","How you doing?"
             ],
             "responses": [
                 "All good..What about you?"
@@ -180,7 +167,7 @@
                 "who programmed you"
             ],
             "responses": [
-                "I was made by Karan Malik."
+                "I was made by Vivek_k24."
             ]
         },
         {
@@ -199,8 +186,8 @@
         {
             "tag": "activity",
             "patterns": [
-                "what are you doing",
-                "what are you upto"
+                "what are you doing?",
+                "what are you upto?"
             ],
             "responses": [
                 "Talking to you, of course!"
@@ -232,27 +219,27 @@
             ]
         },
         {
-            "tag": "karan",
+            "tag": "Amazon.com",
             "patterns": [
-                "who is he",
-                "who is that",
-                "who is karan",
-                "karan malik"
+                "Where can I shop online",
+                "Take me to Amazon",
+                "What's the best customer centric company?",
+                "Jeff Bezos"
             ],
             "responses": [
-                "Head over to his any of his social profiles to find out! Linkedin: www.linkedin.com/in/karan-malik-3a39191a7 Github: https://github.com/Karan-Malik"
+                "click the link below \n \n <a https://www.amazon.com></a>"
             ]
         },
         {
             "tag": "contact",
             "patterns": [
-                "contact developer",
-                "contact karan",
-                "contact programmer",
-                "contact creator"
+                "contact Customer support",
+                "I want to talk to someone other than a bot",
+                "How do I reach you over the phone",
+                "contact technical support"
             ],
             "responses": [
-                "You can contact my creator at his Linkedin profile : www.linkedin.com/in/karan-malik-3a39191a7"
+                "You can contact Amazon.com Customer support from below links and phone numbers \n \n https://www.amazon.com/hz/contact-us/foresight/hubgateway \n \n Technical support: https://www.amazon.com/gp/help/customer/display.html?nodeId=200127470"
             ]
         },
         {
@@ -274,7 +261,7 @@
                 "good talk"
             ],
             "responses": [
-                "It was nice talking to you as well! Come back soon!"
+                "It was nice talking to you as well! Have a good one!"
             ]
         },
         {
@@ -287,17 +274,7 @@
                 "ok"
             ]
         },
-        {
-            "tag": "news",
-            "patterns": [
-                "news",
-                "latest news",
-                "india news"
-            ],
-            "responses": [
-                "..."
-            ]
-        },
+
         {
             "tag": "inspire",
             "patterns": [
@@ -306,7 +283,7 @@
                 "who motivates you"
             ],
             "responses": [
-                "Personally, I find Karan very inspiring. I might not be very fair though.."
+                "Personally, I find motivation from people who I see every day. They help you think straight."
             ]
         },
         {
@@ -316,7 +293,7 @@
                 "cricket score"
             ],
             "responses": [
-                "..."
+                "click the link below for score updates"
             ]
         },
         {
@@ -363,12 +340,21 @@
             ]
         },
         {
+            "tag": "time",
+            "patterns": [
+                "Date","time",""
+            ],
+            "responses": [
+                "..."
+            ]
+        },
+        {
             "tag": "suggest",
             "patterns": [
                 "you are useless","useless","suggest","suggestions","you are bad"
             ],
             "responses": [
-                "Please mail your suggestions to ted.thedlbot.suggestions@gmail.com. Thank you for helping me improve!"
+                "Please mail your suggestions to vk_24_feedback@vk_2.com. Thank you for helping us improve!"
             ]
         },
             {"tag": "riddle",
